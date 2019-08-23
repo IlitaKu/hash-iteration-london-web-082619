@@ -9,7 +9,11 @@
   birthday_kids.map { |kids_name,age| puts "Happy Birthday #{kids_name}! You are now #{age} years old!"}
 end
 def age_appropriate_birthday(birthday_kids)
-  birthday_kids.map {kids_name,age} if birthday_kids[age] >= 12 puts "Happy Birthday #{kids_name}! You are now #{age} years old!"}
+  birthday_kids.each do |kids_age, name|
+    if name <= 12
+      puts "Happy Birthday #{kids_name}! You are now #{age} years old!"
+    end
+    end
 end
 
 
