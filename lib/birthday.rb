@@ -8,6 +8,8 @@
  def happy_birthday(birthday_kids)
   birthday_kids.map { |kids_name,age| puts "Happy Birthday #{kids_name}! You are now #{age} years old!"}
 end
-
+def age_appropriate_birthday(birthday_kids)
+  birthday_kids.map {kids_name,age} if age > 9 puts "Happy Birthday #{kids_name}! You are now #{age} years old!"}
+end
 
 
